@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Boxes" content="width=device-width, initial-scale=1.0">
+    <title>Index to Html</title>
+    <style>
+        a.one:link {
+            color: red;
+            background-color: red;
+            border: 10px double black;
+            transition: 1s;
+            text-decoration: none;
+        }
+		
+        a.one:active {
+            color: black;
+            background-color: pink;
+            border: 10px green;
+            text-decoration: none;
+            font-size: 200%;
+        }
+
+        a.two:link {
+            color: red;
+            background-color: red;
+            border: 10px double black;
+            transition: 1s;
+            text-decoration: none;
+        }
+
+        a.two:active {
+            color: black;
+            background-color: pink;
+            border: 10px green;
+            text-decoration: none;
+            font-size: 200%;
+        }
+
+        p {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 20px;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            border: 10px double black;
+            margin-top: 20px;
+            transition: 1s;
+        }
+
+        .box:target {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Button Style</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#box1">Color</a></li>
+            <li><a href="#box2">Font Size</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div>
+            <p><a class="one" href='#box1'>Button One</a></p>
+            <p><a class="two" href='#box2'>Button Two</a></p>
+        </div>
+
+        <div id="box1" class="box"></div>
+        <div id="box2" class="box"></div>
+    </section>
+
+    <footer>
+        <p>&copy; Index To Html</p>
+    </footer>
+</body>
+
+</html>
